@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              tools:context=".ListActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="#003000">
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/backarrowimage"
+                     android:onClick="backarrowclick"
+
+                     android:background="@android:color/transparent"
+                     android:adjustViewBounds="true"
+                     android:scaleType="fitCenter"
+
+                     android:maxHeight="25dp"
+                     android:maxWidth="25dp"
+
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginTop="15dp"
+                     android:layout_marginBottom="15dp"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:textColor="#FFFFFF"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+
+                  android:gravity="center"
+                  android:textAlignment="center"
+
+                  android:layout_marginTop="15dp"
+                  android:layout_marginBottom="15dp"
+                  android:text="Application Information">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:textStyle="bold"
+
+              android:gravity="start"
+
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:text="Contact : sjyoo@postech.ac.kr">
+
+    </TextView>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="#000000"
+              android:textSize="15dp"
+
+              android:gravity="start"
+
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="15dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:text="Please feel free to contact us to add/modify information. ">
+
+    </TextView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:orientation="vertical"
+
+                  android:background="#CCCCCC"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="#000000"
+              android:textSize="18dp"
+              android:textStyle="bold"
+
+              android:gravity="start"
+
+
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="30dp"
+              android:text="Restaurant / Prayer Room Data Reference">
+
+    </TextView>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:src="@drawable/ktoimage"
+
+               android:background="@android:color/transparent"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:layout_gravity="center"
+
+               android:maxHeight="80dp"
+
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="15dp"
+               android:layout_marginLeft="30dp"
+               android:layout_marginRight="30dp">
+
+    </ImageView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:orientation="vertical"
+
+                  android:background="#CCCCCC"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="#000000"
+              android:textSize="18dp"
+              android:textStyle="bold"
+
+              android:gravity="start"
+
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="30dp"
+              android:text="Pictogram Image Reference">
+
+    </TextView>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="#000000"
+              android:textSize="18dp"
+
+              android:gravity="start"
+
+              android:layout_marginBottom="15dp"
+              android:layout_marginLeft="30dp"
+              android:text="icooon-mono.com">
+
+    </TextView>
+
+</LinearLayout>

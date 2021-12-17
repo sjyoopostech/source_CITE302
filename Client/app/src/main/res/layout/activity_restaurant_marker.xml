@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+                tools:context=".RestaurantMarkerActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="#003000">
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/backarrowimage"
+                     android:onClick="backarrowclick"
+
+                     android:background="@android:color/transparent"
+                     android:adjustViewBounds="true"
+                     android:scaleType="fitCenter"
+
+                     android:maxHeight="25dp"
+                     android:maxWidth="25dp"
+
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginTop="15dp"
+                     android:layout_marginBottom="15dp"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:textColor="#FFFFFF"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+
+                  android:gravity="center"
+                  android:textAlignment="center"
+
+                  android:layout_marginTop="15dp"
+                  android:layout_marginBottom="15dp"
+                  android:text="Restaurant Information">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/restaurantmarkermap"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ImageButton
+                    android:id="@+id/restaurantphonebutton"
+                    android:onClick="restaurantphonebuttonclick"
+
+                    android:src="@drawable/phonebuttonimage"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"/>
+
+            <ImageView
+                    android:id="@+id/restaurantmuslimfriendlyimage"
+
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="90dp"
+                    android:layout_marginTop="30dp"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/restaurantnameenglish"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#009000"
+                          android:textSize="20dp"
+                          android:textStyle="bold"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="150dp"
+                          android:layout_marginTop="30dp"
+                          android:text="DummyEnglishName"/>
+
+                <TextView android:id="@+id/restaurantnamekorean"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="150dp"
+                          android:layout_marginTop="5dp"
+                          android:text="가짜 이름"
+                />
+
+                <TextView android:id="@+id/restauranttypefood"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2"
+
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="30dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginBottom="5dp"
+
+                          android:text="Korean, Chinese, Indian"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="1dp"
+                              android:orientation="vertical"
+
+                              android:background="#CCCCCC"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginBottom="10dp"
+                              android:layout_marginLeft="30dp"
+                              android:layout_marginRight="30dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#000000"
+                          android:textSize="18dp"
+                          android:textStyle="bold"
+
+                          android:layout_gravity="start|top"
+
+
+                          android:layout_marginTop="5dp"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="30dp"
+                          android:layout_marginBottom="10dp"
+                          android:text="Basic Information"
+                />
+
+                <TextView android:id="@+id/restaurantaddressenglish"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="35dp"
+                          android:layout_marginRight="35dp"
+                          android:layout_marginBottom="5dp"
+                          android:text="English Address : DummyAddress"
+                />
+
+                <TextView android:id="@+id/restaurantaddresskorean"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="35dp"
+                          android:layout_marginRight="35dp"
+                          android:layout_marginBottom="5dp"
+                          android:text="Korean Address : 가짜주소"
+                />
+
+                <TextView android:id="@+id/restaurantphonenumber"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="35dp"
+                          android:layout_marginRight="35dp"
+                          android:layout_marginBottom="5dp"
+                          android:text="Phone Number : +82 10-1234-5678"
+                />
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="1dp"
+                              android:orientation="vertical"
+
+                              android:background="#CCCCCC"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginBottom="10dp"
+                              android:layout_marginLeft="30dp"
+                              android:layout_marginRight="30dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:textColor="#000000"
+                          android:textSize="18dp"
+                          android:textStyle="bold"
+
+                          android:layout_gravity="start|top"
+
+
+                          android:layout_marginTop="5dp"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="30dp"
+                          android:layout_marginBottom="10dp"
+                          android:text="Additional Information"
+                />
+
+                <TextView android:id="@+id/restaurantadditionalinformation"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="#444444"
+                          android:textSize="15dp"
+
+                          android:layout_gravity="start|top"
+
+                          android:layout_marginLeft="35dp"
+                          android:layout_marginRight="35dp"
+                          android:layout_marginBottom="5dp"
+                          android:lineSpacingExtra="5dp"
+
+                          android:text="InfoInfoInfo\nInfoInfoInfo"
+                />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
